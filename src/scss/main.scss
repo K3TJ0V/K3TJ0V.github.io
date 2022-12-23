@@ -46,7 +46,7 @@ body{
     }
 }
 .emoji{
-    font-size: 72px;
+    font-size: 68px;
 }
 .skills{
     background-color: #1070CA;
@@ -65,6 +65,7 @@ body{
     &__knowledge{
         width: 100%;
         &--heading{
+            font-size: 24px;
             text-align: center;
         }
         &--list{
@@ -75,6 +76,7 @@ body{
         width: 100%;
         &--heading{
             text-align: center;
+            font-size: 24px;
         }
         &--list{
             list-style-image: url(../assets/img/small-tick-white.svg);
@@ -84,8 +86,51 @@ body{
         width: 100%;
         margin-bottom: 64px;
         &--heading{
+            font-size: 24px;
             text-align: center;
         }
+    }
+    
+}
+
+.projects{
+    &__heading{
+        font-size: 34px;
+    }
+    &__block{
+        margin: 88px 16px;
+        text-align: center;
+    }
+    &__article{
+        line-height: 32px;
+    }
+}
+
+.contact{
+    line-height: 30px;
+    
+    &__block{
+        background-color: #DBEAF7;
+        padding: 64px 16px;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+    &__socials{
+        text-align: center;
+    }
+    &__header{
+        text-align: center;
+    }
+    &__article{
+        text-align: center;
+    }
+    &__mail{
+        background-color: #4DA8FF;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 64px;
     }
     
 }
