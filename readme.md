@@ -1,18 +1,11 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+# Wojciech Górka portfolio
 
-# WTF Webpack Starter Kit 
+A page where I show you what I've learned or want to learn.
 
-Simple toolkit for your static websites development.
+## CV development
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+I created this site with my knowledge after participating in a Maciej Korsan's frontend course. 
+The purpose of this project was to use everything that I learned in 13 weeks of course.
+Now I'm using it to create my CV in case when I would like to court for my first job
+as a junior frontend developer. 
 
