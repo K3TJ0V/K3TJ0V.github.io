@@ -21,18 +21,18 @@ body{
     }
     &__article{
         color: #425A70;
-        text-align: justify;
-    };
+        text-align: center;
+    }
     &__heading--strong{
         color: #4DA8FF;
-    };
+    }
     &__picture{
         width: 96px;
         border-radius: 50%;
-    };
+    }
     &__mail{
         background-color: #4DA8FF;
-        width: 100%;
+        width: 90%;
         text-align: center;
         border-radius: 64px;
         padding: 10px;
@@ -45,18 +45,47 @@ body{
         color: #4DA8FF;
     }
 }
-
+.emoji{
+    font-size: 72px;
+}
 .skills{
     background-color: #1070CA;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 64px;
     align-items: center;
-    &__knowledge--list{
-        list-style-image: url(../assets/img/small-tick.svg);
-    };
-    &__less--list{
-        list-style-image: url(../assets/img/small-tick-white.svg);
-    };
+    color: #fff;
+    width: 100%;
+    line-height: 32px;
+    &__header{
+        padding-top: 64px;
+        margin: 0;
+    }
+    &__knowledge{
+        width: 100%;
+        &--heading{
+            text-align: center;
+        }
+        &--list{
+            list-style-image: url(../assets/img/small-tick.svg);
+        };
+    }
+    &__less{
+        width: 100%;
+        &--heading{
+            text-align: center;
+        }
+        &--list{
+            list-style-image: url(../assets/img/small-tick-white.svg);
+        };
+    }
+    &__learning{
+        width: 100%;
+        margin-bottom: 64px;
+        &--heading{
+            text-align: center;
+        }
+    }
+    
 }
