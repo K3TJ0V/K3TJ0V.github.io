@@ -145,9 +145,80 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header">
+      <img
+        class="header__picture"
+        src="../assets/img/picture.jpeg"
+        alt="my picture"
+      />
+      <span class="header__heading"
+        >My name is Wojciech and I'm aspiring
+        <strong class="header__heading--strong">Frontend developer</strong> and gym rat.</span
+      >
+      <article class="">
+        Maybe you are interested in checking <a href="#skills" class="header__link">my skills</a>. You can
+        look at <a href="#projects" class="header__link">my projects</a>. At the moment I'm still learning new
+        things and looking for new challenges so if you have one,
+        <a href="#contact" class="header__link">contact me 😊</a>.
+      </article>
+      <a href="mailto:wojowany@gmail.com" class="header__mail"
+        >wojowany@gmail.com</a
+      >
+    </header>
+    <main class="skills" id="skills">
+      <h1 class="skills__header">My skills</h1>
+      <article class="skills__knowledge">
+        <h3>💪<br />Working knowledge</h3>
+        <ul class="skills__knowledge--list">
+          <li>Semantic HTML5</li>
+          <li>CSS: Flexbox</li>
+          <li>Markdown</li>
+          <li>JS: LocalStorage</li>
+          <li>Forms</li>
+          <li>SASS</li>
+          <li>JS: DOM manipulations</li>
+        </ul>
+      </article>
+      <article class="skills__less">
+        <h3>🤔</h3><h3>Know something about</h3>
+        <ul class="skills__less--list">
+          <li>CSS: grid</li>
+          <li>API</li>
+          <li>Accessibility</li>
+          <li>CSS animations</li>
+          <li>NPM Scripts</li>
+        </ul>
+      </article>
+      <article class="skills__learning">
+        <h3>🎓<br />Want to learn</h3>
+        <ul class="skills__learning --list">
+          <li>React</li>
+          <li>Node JS</li>
+          <li>Electron</li>
+          <li>Typescript</li>
+          <li>Websockets</li>
+        </ul>
+      </article>
+    </main>
+    <section class="projects" id="projects">
+      <h2 class="projects__heading">Recent projects</h2>
+      <span
+        >I started my frontend developer journey in 2022. Since then I've made
+        some projects. Here is the list of them.</span
+      >
+    </section>
+    <footer class="contact" id="contact">
+      <h2 class="footer__heading">Contact me</h2>
+      <span
+        >I'm open for new opportunities. If you have one for me, hit me up on
+        socials or mail!
+      </span>
+      <img src="../assets/img/Github_icon.svg" alt="Github icon">
+      <img src="../assets/img/Instagram_icon.svg" alt="Instagram icon">
+      <img src="../assets/img/Facebook_icon.svg" alt="Facebook icon">
+      <a href="mailto:wojowany@gmail.com" class="header__mail"
+        >wojowany@gmail.com</a
+      >
+    </footer>
   </body>
 </html>
