@@ -5,8 +5,32 @@
 body{
     font-family:'Nunito';
 }
-
 .header{
+    @media (min-width: 960px){
+        max-width: 768px;
+        margin: 80px auto;
+
+    }
+    &__hero{
+    display: none;
+    //    @media (min-width: 960px){
+    //     display: block;
+    //     position: absolute;
+    //     top: 60px;
+    //     right: 35%;
+    //     background-color: #1070CA;
+    //     color: #fff;
+    //     text-align: center;
+    //     padding: 8px;
+    //     border-radius: 16px;
+    //     &::after{
+    //         background-image: url(../assets/img/Speech_cloud.svg);
+    //         width: 20px;
+    //         height: 16px;
+    //         background-color: hotpink;
+    //         display: block;
+    //     }}
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,10 +42,30 @@ body{
         font-weight: bold;
         font-size: 32px;
         text-align: center;
+        position: relative;
+        @media (min-width: 960px){
+            &::before, &::after{
+                width: 82.94px;
+                height: 254.88px;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+            }
+            &::before{
+                background: url(../assets/img/nawias_lewy.svg);
+                right: 100%;
+            }
+            &::after{
+                background: url(../assets/img/nawias_prawy.svg);
+                left: 100%;
+            }
+        }
     }
     &__article{
         color: #425A70;
         text-align: center;
+
     }
     &__heading--strong{
         color: #4DA8FF;
@@ -49,6 +93,14 @@ body{
     font-size: 68px;
 }
 .skills{
+    @media (min-width: 960px){
+        .desktop__flex{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px
+        }
+        padding-bottom: 50px;
+    }
     background-color: #1070CA;
     display: flex;
     flex-direction: column;
@@ -63,6 +115,10 @@ body{
         margin: 0;
     }
     &__knowledge{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         &--heading{
             font-size: 24px;
@@ -73,6 +129,10 @@ body{
         };
     }
     &__less{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         &--heading{
             text-align: center;
@@ -80,9 +140,14 @@ body{
         }
         &--list{
             list-style-image: url(../assets/img/small-tick-white.svg);
+            padding: 32px;
         };
     }
     &__learning{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         margin-bottom: 64px;
         &--heading{
@@ -92,8 +157,32 @@ body{
     }
     
 }
+.test{
+    @media(min-width: 960px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        
+    }
 
 .projects{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (min-width: 960px){
+        &__grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        padding-bottom: 50px;
+        
+    }
     &__heading{
         font-size: 34px;
     }
@@ -103,6 +192,55 @@ body{
     }
     &__article{
         line-height: 32px;
+    }
+    &__window{
+        margin: 16px;
+        width: 90%;
+        @media (min-width: 960px){
+            max-width: 50%;
+        }
+        background-color: #212528;
+        height: 320px;
+        color: #808082;
+        border-radius: 16px;
+        font-size: 13px;
+        line-height: 24px;
+        &--text{
+            display: block;
+            text-align: right;
+        }
+        &--frame{
+            height: 40px;
+            background-color: #1E1E1E;
+            border-radius: 16px 16px 0 0 ;
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 16px;
+         }
+        &--circle{
+            margin-right: 8px;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #464A4D;
+            border-radius: 50%;
+        }
+        &--content{
+            padding: 24px 16px;
+        }
+
+    }
+
+}
+.window__grid{
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+}
+.window__title{
+    font-weight: normal;
+    &--color{
+        color: #fff;
     }
 }
 
@@ -130,3 +268,4 @@ body{
     }
     
 }
+
